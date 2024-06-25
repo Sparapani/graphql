@@ -18,7 +18,7 @@ const defaultPort = "8080"
 func main() {
 	db, err := sql.Open("sqlite3", "./data.db") //"\graphql\data.db"
 	if err != nil {
-		log.Fatalf("failed to openn database: %v", err)
+		log.Fatalf("failed to open database: %v", err)
 	}
 	defer db.Close()
 
